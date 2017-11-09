@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/myssd/github.com/spring-android-projects/spring-android-samples/spring-android-showcase/AndroidJsonListView2/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="4a3371fcd879bc4aab4e40fe73124cc5e07827c7">
+        <dex dex="/Users/myssd/github.com/spring-android-projects/spring-android-samples/spring-android-showcase/AndroidJsonListView2/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_f9c0a829a9254e19db5c5bbe0137f90e43d375ef/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/myssd/github.com/spring-android-projects/spring-android-samples/spring-android-showcase/AndroidJsonListView2/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/myssd/github.com/spring-android-projects/spring-android-samples/spring-android-showcase/AndroidJsonListView2/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_f4d17c60f77fd5d2d9838c7e3c46ca0ae87a2dca/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/myssd/github.com/spring-android-projects/spring-android-samples/spring-android-showcase/AndroidJsonListView2/app/libs/apache-httpcomponents-httpclient.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="13d1b1d8f318f5b0f95bc2901f378ef68982584f">
+        <dex dex="/Users/myssd/github.com/spring-android-projects/spring-android-samples/spring-android-showcase/AndroidJsonListView2/app/build/intermediates/transforms/dex/debug/folders/1000/2/apache-httpcomponents-httpclient_c57f4e9ff346c5d9549f47e8c9ef80e671325eae/classes.dex" />
+    </item>
+
+</items>

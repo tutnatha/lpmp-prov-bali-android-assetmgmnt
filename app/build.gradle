@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "dev.fortunetree.json"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //add by natha
+    packagingOptions {
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/notice.txt'
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient-android
+    //    compile group: 'org.apache.httpcomponents', name: 'httpclient-android', version: '4.3.5.1'
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    compile files('libs/apache-httpcomponents-httpclient.jar')  //yes bisa..
+
+    compile('org.simpleframework:simple-xml:2.6.9') {
+        exclude group: 'stax', module: 'stax'
+        exclude group: 'stax', module: 'stax-api'
+        exclude group: 'xpp3', module: 'xpp3'
+
+    }
+
+    // https://mvnrepository.com/artifact/org.springframework/spring-core
+//    compile group: 'org.springframework', name: 'spring-core', version: '3.2.0.RELEASE'
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'org.apache.httpcomponents:httpcore:4.4.8'
+    compile 'org.apache.httpcomponents:httpclient:4.5.3'
+    compile 'com.android.support:design:26.+'
+    compile 'org.springframework.android:spring-android-rest-template:1.0.1.RELEASE'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.1.2'
+    compile 'com.google.code.gson:gson:2.2.2'
+    testCompile 'junit:junit:4.12'
+}
